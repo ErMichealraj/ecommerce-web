@@ -28,7 +28,7 @@ const Para: React.FC<Para> = ({setDescription,description}) => {
       useEffect(() => {
         setDescription(html)
         console.log(html)
-      },[html])
+      },[html, setDescription])
 
       const menuRef = useRef<HTMLDivElement>(null)
 

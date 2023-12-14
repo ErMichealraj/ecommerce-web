@@ -81,7 +81,7 @@ useEffect(() => {
       images:imageUrls.toString(),
       userId:id
   }))
-}, [imageUrls])
+}, [Description, id, imageUrls]);
 
 
 const postData = async () => {

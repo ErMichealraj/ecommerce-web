@@ -3,6 +3,7 @@ import prisma from "@/app/prismadb"
 import Link from 'next/link'
 import DeleteCart from './DeleteCart'
 import Button from './Button'
+import Image from 'next/image'
 
 type Props = {
     userId?:number
@@ -28,7 +29,7 @@ const AllCartProduct = async (props: Props) => {
     if(cartProducts.length === 0){
         return(
             <div className='relative flex items-center justify-center'>
-             <img src="empty.png" alt="" width="300" height="200" />
+             <Image src="empty.png" alt="" width="300" height="200" />
                 <h1 className='absolute top-[100%] text-2xl text-purple-600'>Empty Cart</h1>
             </div>
         )
